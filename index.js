@@ -43,7 +43,7 @@ for(var i=0;i<array.length;i++){
   var currentQuestion = array[i];
   console.log("So your "+(i+1)+"st question is : "+currentQuestion.question);
   var answer = readline.question("Type your answer : ");
-  if(answer === currentQuestion.answer) {
+  if(answer.toLowerCase() === currentQuestion.answer) {
     console.log("right!!");
     score = score+1;
     console.log("current score : "+score);
